@@ -1512,7 +1512,7 @@ const rawAllCountries = [
   
       areaItems.push(areaItem);
   
-      addCountryCode(country[2], areaItem.dialCode);
+      return addCountryCode(country[2], areaItem.dialCode);
     });
   
     addCountryCode(
