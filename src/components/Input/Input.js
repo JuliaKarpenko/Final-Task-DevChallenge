@@ -2,23 +2,9 @@ import React, { Component } from 'react';
 import s from './Input.module.css';
 import v4 from 'uuid/v4';
 import '../Flag/flags.png';
+import PropTypes from 'prop-types';
 
-// const Input = () => (
-//     <form >
-//         <input
-//             className={s.input}
-//             type="phone"
-//             name="phone"
-//             // value={phone}
-//             // onChange={this.hangleChange}
-//             placeholder="+1"
-//         />
-//     </form>
-// );
-
-// export default Input;
-
-export default class Form extends Component {
+export default class Input extends Component {
     // state = {
     //     phone: Number,
     // }
@@ -40,7 +26,6 @@ export default class Form extends Component {
                     <input
                         className={s.input}
                         type="text"
-                        // value="+1"
                         onChange={this.hangleChange}
                         placeholder="+380"
                         list="options"
@@ -63,3 +48,8 @@ export default class Form extends Component {
         )
     }
 }
+
+Input.propTypes = {
+    allCountries: PropTypes.object,
+    isOpen: PropTypes.bool
+};
