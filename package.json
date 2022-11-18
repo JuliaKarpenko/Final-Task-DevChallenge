@@ -11,7 +11,7 @@
     "react-loader-spinner": "^2.3.0",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-sprite": "^1.0.4",
     "react-svg-sprite": "^1.0.8",
     "react-table": "^6.10.0",
